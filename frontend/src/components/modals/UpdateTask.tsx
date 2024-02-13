@@ -98,8 +98,7 @@ const UpdateTask = ({ task_id }) => {
             name="description"
             rules={[
               {
-                required: true,
-                message: "Please input  a date!",
+                message: "Please input  a description!",
               },
             ]}
           >
@@ -110,8 +109,7 @@ const UpdateTask = ({ task_id }) => {
             name="status"
             rules={[
               {
-                required: true,
-                message: "Please input  a date!",
+                message: "Please input  a status!",
               },
             ]}
           >
@@ -126,8 +124,7 @@ const UpdateTask = ({ task_id }) => {
             name="board_id"
             rules={[
               {
-                required: true,
-                message: "Please input  a date!",
+                message: "Please select  a board!",
               },
             ]}
           >

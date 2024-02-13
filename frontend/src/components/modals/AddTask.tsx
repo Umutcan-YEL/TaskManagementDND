@@ -114,7 +114,7 @@ const AddTask = () => {
             rules={[
               {
                 required: true,
-                message: "Please input  a date!",
+                message: "Please input  a description!",
               },
             ]}
           >
