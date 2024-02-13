@@ -1,11 +1,10 @@
 import mongoose from "mongoose";
+import "dotenv/config.js";
+mongoose.set("strictQuery", false);
 
 export const Connect = async () => {
   try {
-    mongoose.set("strictQuery", false);
-    mongoose.connect(
-      "mongodb+srv://umutcanyel132:123@taskmanager.mdkvler.mongodb.net/?retryWrites=true&w=majority"
-    );
+    mongoose.connect(process.env.MONGO_URL);
     console.log("Database Connected");
   } catch (error) {
     console.log(error);
