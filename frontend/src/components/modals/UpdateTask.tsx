@@ -85,8 +85,7 @@ const UpdateTask = ({ task_id }) => {
             name="name"
             rules={[
               {
-                required: true,
-                message: "Please input  description!",
+                message: "Please input  name!",
               },
             ]}
           >
