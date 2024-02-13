@@ -194,6 +194,8 @@ function Board() {
                                             <p>{item.content} </p>
                                             <hr />
                                             <p>{item.descrpition} </p>
+                                            <hr />
+                                            <p>{item.due_time.slice(0,10)} </p>
                                           </Col>
                                           <Col style={{ margin: "auto" }}>
                                             {" "}
