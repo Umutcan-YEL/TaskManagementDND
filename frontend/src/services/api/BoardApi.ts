@@ -1,7 +1,7 @@
 import axios from "axios";
 import { BoardModel, BoardRequestModel } from "../../models/Board";
 
-const baseUrl = "http://localhost:3000/board";
+const baseUrl = "https://enthusiastic-outerwear-fly.cyclic.app/board";
 
 export const GetBoards = () => {
   try {

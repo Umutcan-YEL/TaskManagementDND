@@ -5,7 +5,7 @@ import {
   TaskUpdateModel,
 } from "../../models/Task";
 
-const baseUrl = "http://localhost:3000/task";
+const baseUrl = "https://enthusiastic-outerwear-fly.cyclic.app/task";
 
 export const GetTasks = async () => {
   const response = await axios.get(baseUrl + "/get");
