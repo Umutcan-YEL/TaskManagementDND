@@ -57,7 +57,6 @@ function Board() {
       const sourceColumn = columns[source.droppableId];
 
       const destColumn = columns[destination.droppableId];
-      console.log(result.draggableId);
 
       const task_id: string = result.draggableId;
       const board_id: string = destColumn.id;
@@ -71,7 +70,6 @@ function Board() {
 
       dispatch(updateId(task));
 
-      console.log(destColumn.id);
 
       const sourceItems = [...sourceColumn.items];
 

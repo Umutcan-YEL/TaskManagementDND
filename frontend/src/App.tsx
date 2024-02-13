@@ -4,7 +4,7 @@ import { AppDispatch } from "./services/redux/Store";
 import { getboards } from "./services/redux/slices/BoardSlice";
 import { lazy, Suspense, useEffect } from "react";
 import { useSelector } from "react-redux";
-import { TaskState } from "./models/State";
+import { BoardState, TaskState } from "./models/State";
 const Home = lazy(() => import("./pages/Home"));
 
 function App() {
@@ -15,10 +15,12 @@ function App() {
     dispatch(gettasks());
   }, []);
 
-  const isLoading = useSelector((state: TaskState) => state.task.isLoading);
-  console.log(isLoading);
+  const isTaskLoading = useSelector((state: TaskState) => state.task.isLoading);
+  const isBoardLoading = useSelector(
+    (state: BoardState) => state.board.isLoading
+  );
 
-  if (isLoading) {
+  if (isBoardLoading || isTaskLoading) {
     return (
       <div className="center">
         <span className="loader"></span>
