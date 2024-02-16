@@ -1,7 +1,7 @@
 import axios from "axios";
 import { BoardModel, BoardRequestModel } from "../../models/Board";
 
-const baseUrl = "https://enthusiastic-outerwear-fly.cyclic.app/board";
+const baseUrl = "task-management-wrcq.onrender.com/board";
 
 export const GetBoards = () => {
   try {
